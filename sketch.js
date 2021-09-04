@@ -28,7 +28,12 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(230);
- 
+	
+	function keyPressed(){
+	if(keyCode === "w") {
+		Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:130,y:-140}
+	}
+}
 
   groundObject.display();
   dustbinObj.display();
