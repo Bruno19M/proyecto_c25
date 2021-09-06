@@ -28,15 +28,14 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(230);
-	
-	function keyPressed(){
-	if(keyCode === UP_ARROW) {
-		Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:130,y:-145})
-	}
-}
 
   groundObject.display();
   dustbinObj.display();
   paper1.display();
 }
 
+function keyPressed(){
+	if(keyCode === UP_ARROW) {
+		Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:130,y:-145})
+	}
+}
