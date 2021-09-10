@@ -18,7 +18,7 @@ function setup() {
 	
 	groundObject=new ground(width/2,670,width,20);
 	dustbinObj=new dustbin(1200,650);
-	paper1=new Paper(800,350,50);
+	paper1=new Paper(200,350,50);
 
 	Engine.run(engine);
   
